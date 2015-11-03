@@ -59,11 +59,6 @@ module.exports = function (GulpAngularGenerator) {
       rejectWithRegexp.call(this, /styles\.js/);
     }
 
-    if (this.props.jsPreprocessor.key !== 'typescript') {
-      rejectWithRegexp.call(this, /tsd\.json/);
-      rejectWithRegexp.call(this, /tsconfig\.json/);
-    }
-
     if (this.props.jsPreprocessor.srcExtension === 'es6' || this.props.jsPreprocessor.key === 'typescript') {
       rejectWithRegexp.call(this, /index\.constants\.js/);
     }
@@ -72,44 +67,4 @@ module.exports = function (GulpAngularGenerator) {
       rejectWithRegexp.call(this, /markups\.js/);
     }
   };
-
-  /**
-   * Copy additional lint files if needed
-   */
-  GulpAngularGenerator.prototype.lintCopies = function lintCopies() {
-    if (this.props.jsPreprocessor.key === 'coffee') {
-      this.files.push({
-        src: 'coffeelint.json',
-        dest: 'coffeelint.json',
-        template: false
-      });
-    }
-
-    if (this.props.jsPreprocessor.key === 'typescript') {
-      this.files.push({
-        src: 'tslint.json',
-        dest: 'tslint.json',
-        template: false
-      });
-    }
-  };
-
-  /**
-   * Copy additional files for Travis
-   */
-  GulpAngularGenerator.prototype.travisCopies = function travisCopies() {
-    if (process.env.TRAVIS === 'true') {
-
-      // Avoid rate limit by GithubAPI
-      if (this.props.jsPreprocessor.key === 'typescript') {
-
-        this.files.push({
-          src: '.tsdrc',
-          dest: '.tsdrc',
-          template: false
-        });
-      }
-    }
-  };
-
 };

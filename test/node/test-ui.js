@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 var chai = require('chai');
 chai.should();
@@ -52,3 +52,4 @@ describe('gulp-angular generator ui script', function () {
   });
 
 });
+*/
