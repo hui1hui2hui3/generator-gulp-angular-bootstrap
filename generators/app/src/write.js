@@ -58,8 +58,6 @@ module.exports = function (GulpAngularGenerator) {
     this.log('- `$ ' + chalk.yellow.bold('gulp serve:dist') + '` to start BrowserSync server on your optimized application without live reload');
     this.log('- `$ ' + chalk.yellow.bold('gulp test') + '` to run your unit tests with Karma');
     this.log('- `$ ' + chalk.yellow.bold('gulp test:auto') + '` to run your unit tests with Karma in watch mode');
-    this.log('- `$ ' + chalk.yellow.bold('gulp protractor') + '` to launch your e2e tests with Protractor');
-    this.log('- `$ ' + chalk.yellow.bold('gulp protractor:dist') + '` to launch your e2e tests with Protractor on the dist files');
     this.log('\nMore details are available in docs and recipes');
     this.log('https://github.com/Swiip/generator-gulp-angular/tree/master/docs');
   };

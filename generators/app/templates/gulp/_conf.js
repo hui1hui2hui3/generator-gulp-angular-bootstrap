@@ -14,8 +14,7 @@ var gutil = require('gulp-util');
 exports.paths = {
   src: '<%- props.paths.src %>',
   dist: '<%- props.paths.dist %>',
-  tmp: '<%- props.paths.tmp %>',
-  e2e: '<%- props.paths.e2e %>'
+  tmp: '<%- props.paths.tmp %>'
 };
 
 /**

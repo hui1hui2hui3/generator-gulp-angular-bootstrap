@@ -4,7 +4,7 @@ var _ = require('lodash');
 
 var listTechs = require('../techs.json');
 
-var alwaysUsedTechs = ['angular', 'browsersync', 'gulp', 'jasmine', 'karma', 'protractor'];
+var alwaysUsedTechs = ['angular', 'browsersync', 'gulp', 'jasmine', 'karma'];
 
 module.exports = function (GulpAngularGenerator) {
 

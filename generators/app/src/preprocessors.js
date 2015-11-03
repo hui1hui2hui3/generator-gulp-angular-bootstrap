@@ -71,10 +71,6 @@ module.exports = function (GulpAngularGenerator) {
     if (this.props.htmlPreprocessor.key === 'noHtmlPrepro') {
       rejectWithRegexp.call(this, /markups\.js/);
     }
-
-    if (this.props.jsPreprocessor.key !== 'noJsPrepro') {
-      rejectWithRegexp.call(this, /^(?!^e2e\/).*spec\.js/);
-    }
   };
 
   /**

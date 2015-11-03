@@ -14,13 +14,6 @@
     "defaults": "dist"
   },
   {
-    "name": "e2e-path",
-    "type": "String",
-    "required": false,
-    "desc": "e2e test specs folder, relative to cwd",
-    "defaults": "e2e"
-  },
-  {
     "name": "tmp-path",
     "type": "String",
     "required": false,

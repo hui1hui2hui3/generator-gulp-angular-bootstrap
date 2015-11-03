@@ -15,11 +15,6 @@ Contains the build tasks aiming to optimize all your project and create the dist
 - **clean**: delete temporary files
 - **build**: html + images + fonts + misc
 
-## e2e-tests.js
-
-Task for launching e2e tests from Gulp. Which means launching local server,
-an instance of Selenium and Protractor.
-
 ## inject.js
 
 Inject task which link project files in the `index.html` and write the result in `.tmp/serve/index.html`
@@ -36,10 +31,6 @@ Compile your markups files (when you use a HTML preprocessor).
 ## scripts.js
 
 Compile your scripts with your JS preprocessor if you have one. Run the linter. If you use ES6, will also use Browserify to bundle the files.
-
-## server.js
-
-Gulp tasks which start a server for development or e2e tests.
 
 ## styles.js
 

@@ -3,7 +3,6 @@
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 var chalk = require('chalk');
-var Insight = require('insight');
 
 var pkg = require('../../package.json');
 
@@ -20,11 +19,6 @@ var GulpAngularGenerator = yeoman.generators.Base.extend({
 
     this.version = pkg.version;
 
-    this.insight = new Insight({
-      trackingCode: 'UA-66934495-2',
-      pkg: pkg
-    });
-
     this.props = {};
   },
 
@@ -35,7 +29,7 @@ var GulpAngularGenerator = yeoman.generators.Base.extend({
     if (!this.options['skip-welcome-message']) {
       this.log(yosay(
         chalk.red('Welcome!') + '\n' +
-        chalk.yellow('You\'re using the fantastic generator for scaffolding an application with Angular and Gulp!')
+        chalk.yellow('You\'re using the fantastic generator for scaffolding an application with Angular,BootStrap and Gulp!')
       ));
     }
   }
