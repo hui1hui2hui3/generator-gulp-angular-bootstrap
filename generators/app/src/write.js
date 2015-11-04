@@ -6,14 +6,6 @@ var utils = require('./utils');
 module.exports = function (GulpAngularGenerator) {
 
   /**
-   * Write computed props in the .yo-rc.json
-   */
-  GulpAngularGenerator.prototype.writeYoRc = function writeYoRc() {
-    this.config.set('version', this.version);
-    this.config.set('props', this.props);
-  };
-
-  /**
    * Pass through each files and actually copy them
    */
   GulpAngularGenerator.prototype.writeFiles = function writeFiles() {

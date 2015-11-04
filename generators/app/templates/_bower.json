@@ -1,10 +1,8 @@
 {
-  "name": "<%- appName %>",
-  "version": "0.0.0",
+  "name": "<%- props.appName %>",
+  "version": "<%- props.appVersion %>",
   "dependencies": {
-<% if (includeModernizr) { -%>
-    "modernizr": "~2.8.3",
-<% } if (angularModulesObject.animate) { -%>
+<% if (angularModulesObject.animate) { -%>
     "angular-animate": "<%- props.angularVersion %>",
 <% } if (angularModulesObject.cookies) { -%>
     "angular-cookies": "<%- props.angularVersion %>",
@@ -20,8 +18,6 @@
     "jquery": "~1.11.3",
 <% } if (props.jQuery.key === 'jquery2') { -%>
     "jquery": "~2.1.4",
-<% } if (props.jQuery.key === 'zepto') { -%>
-    "zepto": "~1.1.6",
 <% } if (props.resource.key === 'angular-resource') { -%>
     "angular-resource": "<%- props.angularVersion %>",
 <% } if (props.resource.key === 'restangular') { -%>
@@ -33,13 +29,7 @@
 <% } if (props.router.key === 'new-router') { -%>
     "angular-new-router": "~0.5.3",
 <% } if(props.ui.key === 'bootstrap') { -%>
-<%   if(props.cssPreprocessor.extension === 'scss') { -%>
     "bootstrap": "~3.3.5",
-<%   } else if(props.cssPreprocessor.extension === 'styl') { -%>
-    "bootstrap-stylus": "~4.0.4",
-<%   } else { -%>
-    "bootstrap": "~3.3.5",
-<%   } -%>
 <% } if(props.ui.key === 'foundation') { -%>
     "foundation": "~5.5.2",
 <% } if(props.ui.key === 'angular-material') { -%>
@@ -54,21 +44,12 @@
     "angular-strap": "~2.3.1",
 <% } if(props.foundationComponents.key === 'angular-foundation') { -%>
     "angular-foundation": "~0.6.0",
-<% } if(props.jsPreprocessor.key === 'traceur') { -%>
-    "traceur-runtime": "~0.0.90",
 <% } -%>
-    "malarkey": "yuanqing/malarkey#~1.3.1",
-    "angular-toastr": "~1.5.0",
-    "moment": "~2.10.6",
     "animate.css": "~3.4.0",
     "angular": "<%- props.angularVersion %>"
   },
   "devDependencies": {
-    "angular-mocks": "<%- props.angularVersion %>"
   },
-<% if (bowerOverrides !== null) { -%>
-  "overrides": <%- bowerOverrides %>,
-<% } -%>
   "resolutions": {
 <% if (props.jQuery.key === 'jquery1') { -%>
     "jquery": "~1.11.3",

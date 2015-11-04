@@ -12,18 +12,6 @@
     "package.json",
     "bower.json",
 
-    "karma.conf.js",
-
-    "gulp/conf.js",
-    "gulp/build.js",
-    "gulp/inject.js",
-    "gulp/markups.js",
-    "gulp/scripts.js",
-    "gulp/styles.js",
-    "gulp/watch.js",
-    "gulp/server.js",
-    "gulp/unit-tests.js",
-
     "src/index.html"
   ]
 }
