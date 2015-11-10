@@ -1,17 +1,27 @@
 {
-  "staticFiles": [
-    ".bowerrc",
-    ".editorconfig",
+    "staticFiles": [
+        ".bowerrc",
+        ".editorconfig",
 
-    "gulpfile.js"
-  ],
-  "templates": [
-    ".gitignore",
-    ".jshintrc",
+        "gulpfile.js",
+        "vendor.json",
+        "src/scripts/app.js",
+        "src/scripts/directives/enhance.js",
+        "src/styles/main.scss",
+        "src/styles/common/_patch.scss",
+        "src/styles/home/home.scss",
+        "src/styles/test/_componentsTest.scss",
+        "src/views/componentsTest.html",
+        "src/views/home.html",
+        "src/views/homeContent.html"
+    ],
+    "templates": [
+        ".gitignore",
+        ".jshintrc",
 
-    "package.json",
-    "bower.json",
+        "package.json",
+        "bower.json",
 
-    "src/index.html"
-  ]
+        "src/index.html"
+    ]
 }

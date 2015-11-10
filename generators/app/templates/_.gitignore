@@ -3,8 +3,7 @@ bower_components/
 coverage/
 .sass-cache/
 .idea/
-<%- props.paths.tmp %>/
-<%- props.paths.dist %>/
-<% if (props.jsPreprocessor.key === 'typescript') { %>
-typings/
-<% } -%>
+.tmp/
+dist/*
+www/*
+
